@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let respuesta = parseInt(prompt("Escribe un número del 1 al 10"));
+ let stringpar ="";
+ let stringinp= "";
+ for (let i = 0; i < respuesta; i++)
+ {
+    if(i%2 ===  0 || i === 0)
+    {
+     stringinp = stringinp+"X";
+     stringpar = stringpar+"O";
+    }
+    else
+    {       
+     stringinp = stringinp+"O";
+     stringpar = stringpar+"X";
+    }
+
+    
+ }
+
+ for(let j = 0; j < respuesta; j++ )
+ {
+    if(j%2 ===  0 || j===0)
+    {
+     console.log(stringpar);
+    }
+    else
+    {       
+    console.log(stringinp);
+    }
+    
+ }
+
+    </script>
+</body>
+</html>
